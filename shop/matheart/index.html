@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>❤超市数心❤</title>
+        <style>
+            body {
+                background-color: rgb(255, 133, 184);
+            }
+            div {
+                position: relative;
+                width: 300px;
+                left: 50%;
+                margin-left: -150px;
+                top: 100px;
+            }
+            div>img {
+                border-style: solid;
+                border-radius: 10px;
+                border-color: darkkhaki;
+                position: relative;
+                display: block;
+                width: 300px;
+                
+            }
+            p {
+                color: white;
+                font-size: x-large;
+                text-align: center;
+            }
+        </style>
+        <script>
+            function randomInt(m, n) {
+                return m + parseInt(Math.random() * 11451419) % (n - m + 1);
+            }
+            function randomPic() {
+                var e = document.getElementById("img1");
+                var id = randomInt(0, 10);
+                e.src = `./名言/${id}.png`;
+                document.getElementById("p1").innerHTML = "商品" + (id+1);
+            }
+        </script>
+    </head>
+    <body>
+        <div class="sample">
+            <p id="p1">商品1</p>
+            <img src="./名言/0.png" alt="数心被透坏掉了" id="img1" onclick="randomPic()">
+        </div>
+
+    </body>
+</html>
