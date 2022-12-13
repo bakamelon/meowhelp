@@ -52,19 +52,18 @@
               {title: "Bot\u5f00\u5173", url: "#bot" },
               {title: "\u6765\u4efd\u6da9\u56fe", url: "#_14" },
               {title: "\u95ee\u7b54", url: "#_15" },
-              {title: "\u6a21\u62df\u62bd\u5361\uff08\u4e0d\u542f\u7528\uff09", url: "#_16" },
           ]},
           {title: "----\u5176\u4ed6\u6742\u4e03\u6742\u516b\u7684\u529f\u80fd----", url: "#-_1", children: [
-              {title: "\u53d6\u5934\u50cf", url: "#_17" },
-              {title: "\u539f\u795e\u76f8\u5173", url: "#_18" },
+              {title: "\u53d6\u5934\u50cf", url: "#_16" },
+              {title: "\u539f\u795e\u76f8\u5173", url: "#_17" },
           ]},
           {title: "----\u88ab\u52a8----", url: "#-_2", children: [
-              {title: "\u597d\u611f\u5ea6", url: "#_19" },
-              {title: "\u9ed1\u540d\u5355", url: "#_20" },
-              {title: "\u8fdd\u7981\u8bcd\u68c0\u6d4b", url: "#_21" },
-              {title: "\u9632\u5237\u5c4f", url: "#_22" },
-              {title: "\u88ab\u7981\u8a00\u540e\u884c\u4e3a", url: "#_23" },
-              {title: "\u590d\u8bfb\u673a", url: "#_24" },
+              {title: "\u597d\u611f\u5ea6", url: "#_18" },
+              {title: "\u9ed1\u540d\u5355", url: "#_19" },
+              {title: "\u8fdd\u7981\u8bcd\u68c0\u6d4b", url: "#_20" },
+              {title: "\u9632\u5237\u5c4f", url: "#_21" },
+              {title: "\u88ab\u7981\u8a00\u540e\u884c\u4e3a", url: "#_22" },
+              {title: "\u590d\u8bfb\u673a", url: "#_23" },
           ]},
         ];
 
@@ -229,7 +228,7 @@ A发送： /疫情 北京
 喵呜：群友Bの后宫 ...（转发消息形式）</p>
 </li>
 <li>
-<p><span style="color: orange">Q群管家和自己不会被抽到</span></p>
+<p><span style="color: orange">Q群管家和自己不会被抽到，一次抽取超过三个会有 0.2 概率啥也没有，并且计算冷却</span></p>
 </li>
 </ul>
 <h2 id="avbv"><span style="color: #00AEAE">AV/BV解析</span></h2>
@@ -340,25 +339,28 @@ A发送： /疫情 北京
 <pre><code>问你好答你好呀！ （审核通过后发送`你好`，喵呜会回复`你好呀！`）
 /删除词条 你好   （删除`你好`词条，后续再发送不会触发回复）
 </code></pre>
-<h2 id="_16"><span style="color: #00AEAE">模拟抽卡（不启用）</span></h2>
-<p>模拟游戏抽卡，可以模拟 原神，碧蓝航线，公主连结，明日方舟，碧蓝档案 的抽卡<br />
-<span style="color: red">资源占用较多，大部分时候不启用</span>  </p>
-<p>使用方式：发送 <code>[游戏名]n抽</code> （n 为阿拉伯数字）</p>
-<p>示例：</p>
-<pre><code>原神10抽
-碧蓝10抽
-公主连结5抽
-方舟10抽
-</code></pre>
+<!-- ## <span style="color: #00AEAE">模拟抽卡（不启用）</span>
+模拟游戏抽卡，可以模拟 原神，碧蓝航线，公主连结，明日方舟，碧蓝档案 的抽卡  
+<span style="color: red">资源占用较多，大部分时候不启用</span>  
+
+使用方式：发送 `[游戏名]n抽` （n 为阿拉伯数字）
+
+示例：
+
+    原神10抽
+    碧蓝10抽
+    公主连结5抽
+    方舟10抽 -->
+
 <h1 id="-_1">----其他杂七杂八的功能----</h1>
-<h2 id="_17"><span style="color: #00AEAE">取头像</span></h2>
+<h2 id="_16"><span style="color: #00AEAE">取头像</span></h2>
 <p>获取某个群友头像</p>
 <p>用法：<code>/取头像 @A</code> （获取A的头像）</p>
-<h2 id="_18"><span style="color: #00AEAE">原神相关</span></h2>
+<h2 id="_17"><span style="color: #00AEAE">原神相关</span></h2>
 <p>喵呜还有一些原神相关的功能，如查询玩家信息，深渊信息，角色攻略，武器信息，角色语音等</p>
 <p>发送 <code>/原神帮助</code> 可以获得相关帮助</p>
 <h1 id="-_2">----被动----</h1>
-<h2 id="_19"><span style="color: #00AEAE">好感度</span></h2>
+<h2 id="_18"><span style="color: #00AEAE">好感度</span></h2>
 <p>主要用于自我保护，检测攻击性话语等用的，计算的好感其实不是很准。  </p>
 <p>喵呜会对你说的话进行情感分析，根据正负情况计算好感。<br />
 为正会加好感，为负时会检测负面关键词决定是否进行减好感。<br />
@@ -368,17 +370,18 @@ A发送： /疫情 北京
 好感高低不会有特别对待，<span style="color: red">不要刻意刷好感</span>，
 好感度低也不用担心，只要没有对喵呜说过攻击性的话，一般是不会拉黑的，
 正常使用就好，如果不喜欢机器人可以屏蔽掉，还请不要随便骂。</p>
-<h2 id="_20"><span style="color: #00AEAE">黑名单</span></h2>
+<p>可以使用 <code>/查看好感</code> 来查看自己的好感等级</p>
+<h2 id="_19"><span style="color: #00AEAE">黑名单</span></h2>
 <p>黑名单会记录一些对机器人不友好的人，对于黑名单成员，喵呜不会回复他们的任何消息。</p>
-<h2 id="_21"><span style="color: #00AEAE">违禁词检测</span></h2>
+<h2 id="_20"><span style="color: #00AEAE">违禁词检测</span></h2>
 <p>喵呜会检测向喵呜发送的消息中的违禁词，若有违禁词则可能会禁言触发者，
 并且会拉黑10分钟以及转告主人，会视情况决定是否永久拉黑，但是误触发不会被永久拉黑</p>
-<h2 id="_22"><span style="color: #00AEAE">防刷屏</span></h2>
-<p>发消息过快时（4s内发送超过5条消息），喵呜会不理刷屏者 30s ，主要用于防止机器人之间互相刷屏</p>
-<h2 id="_23"><span style="color: #00AEAE">被禁言后行为</span></h2>
+<h2 id="_21"><span style="color: #00AEAE">防刷屏</span></h2>
+<p>发消息过快时（一定时间内发送超过一定条数消息），喵呜会不理刷屏者 30s ，主要用于防止机器人之间互相刷屏</p>
+<h2 id="_22"><span style="color: #00AEAE">被禁言后行为</span></h2>
 <p>喵呜被禁言超过七天会通知主人，并可能会退群<br />
 被禁言超过半小时会通知主人，并临时拉黑被禁言的群一天（即不回复被禁言的群里的消息，即便已经解禁）</p>
-<h2 id="_24"><span style="color: #00AEAE">复读机</span></h2>
+<h2 id="_23"><span style="color: #00AEAE">复读机</span></h2>
 <p>随机复读群友之前发的一句话</p>
 <hr>
 
