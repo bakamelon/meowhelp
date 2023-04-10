@@ -41,29 +41,33 @@
               {title: "\u4eca\u65e5\u8fd0\u52bf", url: "#_7" },
               {title: "AI\u95f2\u804a", url: "#ai" },
               {title: "\u70b9\u6b4c", url: "#_8" },
-              {title: "\u67e5\u75ab\u60c5", url: "#_10" },
-              {title: "\u6bcf\u65e5\u65b0\u95fb60s", url: "#60s" },
-              {title: "\u54ea\u4e2a\u7fa4\u53cb\u662f\u6211\u8001\u5a46", url: "#_11" },
+              {title: "\u6b4c\u8bcd\u63a5\u9f99", url: "#_10" },
+              {title: "\u6bcf\u65e5\u65b0\u95fb", url: "#_11" },
+              {title: "\u54ea\u4e2a\u7fa4\u53cb\u662f\u6211\u8001\u5a46", url: "#_12" },
               {title: "AV/BV\u89e3\u6790", url: "#avbv" },
+              {title: "\u53d1\u766b", url: "#_13" },
+              {title: "\u5723\u7ecf", url: "#_14" },
           ]},
           {title: "----------------------", url: "#-", children: [
-              {title: "\u7fa4\u804a\u7ba1\u7406", url: "#_12" },
-              {title: "\u64a4\u56de\u6d88\u606f", url: "#_13" },
+              {title: "\u7fa4\u804a\u7ba1\u7406", url: "#_15" },
+              {title: "\u64a4\u56de\u6d88\u606f", url: "#_16" },
               {title: "Bot\u5f00\u5173", url: "#bot" },
-              {title: "\u6765\u4efd\u6da9\u56fe", url: "#_14" },
-              {title: "\u95ee\u7b54", url: "#_15" },
+              {title: "\u6765\u4efd\u6da9\u56fe", url: "#_17" },
+              {title: "\u95ee\u7b54", url: "#_18" },
           ]},
           {title: "----\u5176\u4ed6\u6742\u4e03\u6742\u516b\u7684\u529f\u80fd----", url: "#-_1", children: [
-              {title: "\u53d6\u5934\u50cf", url: "#_16" },
-              {title: "\u539f\u795e\u76f8\u5173", url: "#_17" },
+              {title: "\u53d6\u5934\u50cf", url: "#_19" },
+              {title: "\u6233", url: "#_20" },
+              {title: "\u55b5\u4e00\u4e2a", url: "#_21" },
+              {title: "GenshinUID", url: "#genshinuid" },
           ]},
           {title: "----\u88ab\u52a8----", url: "#-_2", children: [
-              {title: "\u597d\u611f\u5ea6", url: "#_18" },
-              {title: "\u9ed1\u540d\u5355", url: "#_19" },
-              {title: "\u8fdd\u7981\u8bcd\u68c0\u6d4b", url: "#_20" },
-              {title: "\u9632\u5237\u5c4f", url: "#_21" },
-              {title: "\u88ab\u7981\u8a00\u540e\u884c\u4e3a", url: "#_22" },
-              {title: "\u590d\u8bfb\u673a", url: "#_23" },
+              {title: "\u597d\u611f\u5ea6", url: "#_22" },
+              {title: "\u9ed1\u540d\u5355", url: "#_23" },
+              {title: "\u8fdd\u7981\u8bcd\u68c0\u6d4b", url: "#_24" },
+              {title: "\u9632\u5237\u5c4f", url: "#_25" },
+              {title: "\u88ab\u7981\u8a00\u540e\u884c\u4e3a", url: "#_26" },
+              {title: "\u590d\u8bfb\u673a", url: "#_27" },
           ]},
         ];
 
@@ -155,7 +159,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <p><strong>使用方法</strong>：发送<code>答案之书</code>即可</p>
 <h2 id="_7"><span style="color: #00AEAE">今日运势</span></h2>
 <p>查看你今天的运势</p>
-<p><strong>使用方法</strong>: <strong>@喵呜</strong>发送<code>运势</code>即可  </p>
+<p><strong>使用方法</strong>: <strong>@喵呜</strong>发送<code>运势</code>即可，或者发送 <code>今日运势</code></p>
 <ul>
 <li>示例：<br />
 <strong>A</strong>&ensp;&ensp;&ensp;: @喵呜 运势 <br />
@@ -186,32 +190,34 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     <img src="../images/ordersong2.png" width="250px" alt="点歌示例2"></p>
 </li>
 </ul>
-<h2 id="_10"><span style="color: #00AEAE">查疫情</span></h2>
-<p>查询某地疫情<br />
-为命令形式，需要命令头 <code>#</code> 或 <code>/</code></p>
-<p>命令：<code>疫情</code><br />
-参数：地区（中国，省，市）</p>
-<pre><code>示例：   
-A发送： /疫情 北京
-喵呜发送： 
-    北京 疫情数据：  
-        目前：  
-        风险情况：无法获取  
-        确诊人数：25(+0)  
-    -----------------        
-        累计数据：  
-        确诊人数：3702  
-        治愈人数：3668  
-        死亡人数：9  
-    更新时间：2022-07-08 11:35:22
+<h2 id="_10"><span style="color: #00AEAE">歌词接龙</span></h2>
+<p>歌词接龙，所有操作都需要以 <code>&gt;&gt;</code> 开头</p>
+<p>操作：</p>
+<ul>
+<li><code>&gt;&gt; 歌词/歌名</code></li>
+<li><code>&gt;&gt; 获取歌词</code> （获取正在接龙的完整歌词，~~看答案~~）</li>
+<li><code>&gt;&gt; :提示</code>，<code>&gt;&gt; :提示多点</code> （给出下一句歌词的提示，冒号不能漏）</li>
+<li><code>&gt;&gt; 结束</code> 结束歌词接龙</li>
+</ul>
+<p>发送 <code>&gt;&gt; 歌词/歌名</code> 即可触发，示例：</p>
+<pre><code>自己: &gt;&gt;  明天会更好
+喵呜: 选择要接龙的歌吧...
+自己: &gt;&gt; 1
+喵呜: 开始接龙...
+自己: &gt;&gt; 轻轻敲醒沉睡的心灵
+喵呜: &gt;&gt; 慢慢睁开你的眼睛
+...
+自己: &gt;&gt; :提示
+喵呜: 下一句开头是：孤独地
+...
 </code></pre>
-<h2 id="60s"><span style="color: #00AEAE">每日新闻60s</span></h2>
+<h2 id="_11"><span style="color: #00AEAE">每日新闻</span></h2>
 <p>发送每日新闻</p>
 <p>使用方法：
 发送 <code>/看世界</code> 即可</p>
 <p>会发送一张这样的图<br />
 <img src="https://img04.sogoucdn.com/app/a/200692/621_2784_feedback_00adaab512af45e9a81db0fc81d1f79c.png" alt="每日60s新闻" width="300px"></p>
-<h2 id="_11"><span style="color: #00AEAE">哪个群友是我老婆</span></h2>
+<h2 id="_12"><span style="color: #00AEAE">哪个群友是我老婆</span></h2>
 <p>随机抽取一位群友（或多位群友）<del>成为你的老婆</del></p>
 <ul>
 <li>
@@ -239,8 +245,22 @@ A发送： /疫情 北京
 <pre><code>@喵呜 /开启哔哩解析 （斜杠不要漏）  
 @喵呜 /关闭哔哩解析
 </code></pre>
+<h2 id="_13"><span style="color: #00AEAE">发癫</span></h2>
+<p>生成一段胡言乱语的文字</p>
+<p>命令：<code>发癫</code></p>
+<p>参数：<code>&lt;名字&gt;</code></p>
+<p>示例：<code>/发癫 喵呜</code></p>
+<h2 id="_14"><span style="color: #00AEAE">圣经</span></h2>
+<p>生成一段圣经</p>
+<p>命令：<code>圣经</code></p>
+<p>参数：<code>&lt;主题&gt; &lt;名字&gt; [她 | 他 | 它]</code>，不提供任何参数时（即只发送 <code>/圣经</code> 时可以获取具体帮助和可用主题）</p>
+<p>示例：</p>
+<ul>
+<li><code>/圣经 拜访 喵呜</code></li>
+<li><code>/圣经 拜访 张三 他</code></li>
+</ul>
 <h1 id="-">----------------------</h1>
-<h2 id="_12"><span style="color: #00AEAE">群聊管理</span></h2>
+<h2 id="_15"><span style="color: #00AEAE">群聊管理</span></h2>
 <p><span style="color: orange"><strong>！此功能需要喵呜是管理员或群主</strong></span><br />
 主要是一些 <strong>禁言</strong>相关，<strong>头衔设置</strong>，<strong>违禁词相关</strong>的命令，需要命令头 <code>/</code>或<code>#</code></p>
 <ul>
@@ -309,7 +329,7 @@ A发送： /疫情 北京
     助眠，发送 <code>/sleep</code> 会禁言一定时间，让你安心睡觉别水群了（x）</p>
 </li>
 </ul>
-<h2 id="_13"><span style="color: #00AEAE">撤回消息</span></h2>
+<h2 id="_16"><span style="color: #00AEAE">撤回消息</span></h2>
 <p>若喵呜发送了什么不合适的话（由于接口返回结果不确定或是其他什么不确定因素导致的），可撤回喵呜发送的消息<br />
 <strong>管理员</strong>以上权限可用  </p>
 <p>命令：<code>撤回消息</code><br />
@@ -326,11 +346,11 @@ A发送： /疫情 北京
 <p>控制喵呜在自己群的启用状态，不过关闭时可能会存在 关了，但没完全关 的情况（</p>
 <p>启用方法：<code>@喵呜 /启用</code> <br />
 禁用方法：<code>@喵呜 /禁用</code> （禁用后将不会回复群里的消息）</p>
-<h2 id="_14"><span style="color: #00AEAE">来份涩图</span></h2>
+<h2 id="_17"><span style="color: #00AEAE">来份涩图</span></h2>
 <p><span style="color: orange">只在部分群开启，要开启需要申请，可以用反馈功能进行申请</span>  <br />
 功能：发送随机二次元图</p>
 <p>触发方式：发送<code>二次元</code>，<code>来份涩图</code>，<code>壁纸</code> 即可</p>
-<h2 id="_15"><span style="color: #00AEAE">问答</span></h2>
+<h2 id="_18"><span style="color: #00AEAE">问答</span></h2>
 <p>即关键词回复，可以自己添加/删除词条<br />
 <span style="color: red">仅白名单成员可以自由添加删除，其他需要审核通过才能生效</span>  </p>
 <p>添加词条：<code>问A答B</code> （A是触发的关键词，B是回复语）<br />
@@ -353,14 +373,19 @@ A发送： /疫情 北京
     方舟10抽 -->
 
 <h1 id="-_1">----其他杂七杂八的功能----</h1>
-<h2 id="_16"><span style="color: #00AEAE">取头像</span></h2>
+<h2 id="_19"><span style="color: #00AEAE">取头像</span></h2>
 <p>获取某个群友头像</p>
 <p>用法：<code>/取头像 @A</code> （获取A的头像）</p>
-<h2 id="_17"><span style="color: #00AEAE">原神相关</span></h2>
+<h2 id="_20"><span style="color: #00AEAE">戳</span></h2>
+<p>戳@的群友（双击头像的效果，即使 TA 没冒泡）</p>
+<p>用法：<code>/戳 @A</code> </p>
+<h2 id="_21"><span style="color: #00AEAE">喵一个</span></h2>
+<p>喵喵喵，<code>@喵呜 喵一个</code></p>
+<h2 id="genshinuid"><span style="color: #00AEAE">GenshinUID</span></h2>
 <p>喵呜还有一些原神相关的功能，如查询玩家信息，深渊信息，角色攻略，武器信息，角色语音等</p>
 <p>发送 <code>/原神帮助</code> 可以获得相关帮助</p>
 <h1 id="-_2">----被动----</h1>
-<h2 id="_18"><span style="color: #00AEAE">好感度</span></h2>
+<h2 id="_22"><span style="color: #00AEAE">好感度</span></h2>
 <p>主要用于自我保护，检测攻击性话语等用的，计算的好感其实不是很准。  </p>
 <p>喵呜会对你说的话进行情感分析，根据正负情况计算好感。<br />
 为正会加好感，为负时会检测负面关键词决定是否进行减好感。<br />
@@ -371,17 +396,17 @@ A发送： /疫情 北京
 好感度低也不用担心，只要没有对喵呜说过攻击性的话，一般是不会拉黑的，
 正常使用就好，如果不喜欢机器人可以屏蔽掉，还请不要随便骂。</p>
 <p>可以使用 <code>/查看好感</code> 来查看自己的好感等级</p>
-<h2 id="_19"><span style="color: #00AEAE">黑名单</span></h2>
+<h2 id="_23"><span style="color: #00AEAE">黑名单</span></h2>
 <p>黑名单会记录一些对机器人不友好的人，对于黑名单成员，喵呜不会回复他们的任何消息。</p>
-<h2 id="_20"><span style="color: #00AEAE">违禁词检测</span></h2>
+<h2 id="_24"><span style="color: #00AEAE">违禁词检测</span></h2>
 <p>喵呜会检测向喵呜发送的消息中的违禁词，若有违禁词则可能会禁言触发者，
 并且会拉黑10分钟以及转告主人，会视情况决定是否永久拉黑，但是误触发不会被永久拉黑</p>
-<h2 id="_21"><span style="color: #00AEAE">防刷屏</span></h2>
+<h2 id="_25"><span style="color: #00AEAE">防刷屏</span></h2>
 <p>发消息过快时（一定时间内发送超过一定条数消息），喵呜会不理刷屏者 30s ，主要用于防止机器人之间互相刷屏</p>
-<h2 id="_22"><span style="color: #00AEAE">被禁言后行为</span></h2>
+<h2 id="_26"><span style="color: #00AEAE">被禁言后行为</span></h2>
 <p>喵呜被禁言超过七天会通知主人，并可能会退群<br />
 被禁言超过半小时会通知主人，并临时拉黑被禁言的群一天（即不回复被禁言的群里的消息，即便已经解禁）</p>
-<h2 id="_23"><span style="color: #00AEAE">复读机</span></h2>
+<h2 id="_27"><span style="color: #00AEAE">复读机</span></h2>
 <p>随机复读群友之前发的一句话</p>
 <hr>
 
