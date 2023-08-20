@@ -59,15 +59,18 @@
               {title: "\u53d6\u5934\u50cf", url: "#_19" },
               {title: "\u6233", url: "#_20" },
               {title: "\u55b5\u4e00\u4e2a", url: "#_21" },
+              {title: "\u4e00\u8a00", url: "#_22" },
+              {title: "\u6bcf\u65e5\u82f1\u8bed", url: "#_23" },
+              {title: "\u6bd2\u9e21\u6c64", url: "#_24" },
               {title: "GenshinUID", url: "#genshinuid" },
           ]},
           {title: "----\u88ab\u52a8----", url: "#-_2", children: [
-              {title: "\u597d\u611f\u5ea6", url: "#_22" },
-              {title: "\u9ed1\u540d\u5355", url: "#_23" },
-              {title: "\u8fdd\u7981\u8bcd\u68c0\u6d4b", url: "#_24" },
-              {title: "\u9632\u5237\u5c4f", url: "#_25" },
-              {title: "\u88ab\u7981\u8a00\u540e\u884c\u4e3a", url: "#_26" },
-              {title: "\u590d\u8bfb\u673a", url: "#_27" },
+              {title: "\u597d\u611f\u5ea6", url: "#_25" },
+              {title: "\u9ed1\u540d\u5355", url: "#_26" },
+              {title: "\u8fdd\u7981\u8bcd\u68c0\u6d4b", url: "#_27" },
+              {title: "\u9632\u5237\u5c4f", url: "#_28" },
+              {title: "\u88ab\u7981\u8a00\u540e\u884c\u4e3a", url: "#_29" },
+              {title: "\u590d\u8bfb\u673a", url: "#_30" },
           ]},
         ];
 
@@ -118,7 +121,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     <h1 id="_1">功能</h1>
 <p>包括一些 <strong>没有限制</strong> / <strong>部分群启用</strong> / <strong>仅某个人可用</strong> 的功能
-以及暂停使用的功能（限制使用的会标明）</p>
+以及暂停使用的功能（限制使用的会标明），<b>如果没有写需要 @ 则 <code>不需要</code> @ 即可使用 </b></p>
 <hr>
 
 <h2 id="_2"><span style="color: #00AEAE">帮助</span></h2>
@@ -239,7 +242,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 </ul>
 <h2 id="avbv"><span style="color: #00AEAE">AV/BV解析</span></h2>
 <p>对发送的AV/BV号，视频链接，哔哩卡片消息进行解析，并发送解析后的 视频链接和视频简介等<br />
-默认关闭状态，需要手动开启，开启的命令需要 <strong>@喵呜</strong> 才可 </p>
+默认关闭状态，需要手动开启，开启/关闭的命令需要 <strong>@喵呜</strong> 才可 </p>
 <p>开启or关闭命令：<code>开启哔哩解析</code>，<code>关闭哔哩解析</code>  </p>
 <p>示例：</p>
 <pre><code>@喵呜 /开启哔哩解析 （斜杠不要漏）  
@@ -333,7 +336,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <p>若喵呜发送了什么不合适的话（由于接口返回结果不确定或是其他什么不确定因素导致的），可撤回喵呜发送的消息<br />
 <strong>管理员</strong>以上权限可用  </p>
 <p>命令：<code>撤回消息</code><br />
-参数：消息索引（即从下往上数第n条消息，从0开始计）</p>
+参数：消息索引（即从下往上数第n条消息，从0开始计），或者也可引用回复 <code>/撤回</code> 即可撤回引用的消息</p>
 <p>示例：</p>
 <pre><code>喵呜：消息1
 喵呜；消息2
@@ -349,29 +352,16 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <h2 id="_17"><span style="color: #00AEAE">来份涩图</span></h2>
 <p><span style="color: orange">只在部分群开启，要开启需要申请，可以用反馈功能进行申请</span>  <br />
 功能：发送随机二次元图</p>
-<p>触发方式：发送<code>二次元</code>，<code>来份涩图</code>，<code>壁纸</code> 即可</p>
+<p>触发方式：发送<code>二次元</code>，<code>来份涩图</code>，<code>壁纸</code> 即可，也可以一次获取多个，发送 <code>来n份涩图</code> 可以获取 n 份，n 不超过10</p>
 <h2 id="_18"><span style="color: #00AEAE">问答</span></h2>
 <p>即关键词回复，可以自己添加/删除词条<br />
-<span style="color: red">仅白名单成员可以自由添加删除，其他需要审核通过才能生效</span>  </p>
+<span style="color: red">仅白名单成员可以自由添加删除，其他需要审核通过才能生效，防止有人乱教或者恶意诱导</span>  </p>
 <p>添加词条：<code>问A答B</code> （A是触发的关键词，B是回复语）<br />
 删除词条：<code>/删除词条 A</code> （删除关键词 A）</p>
 <p>示例：</p>
 <pre><code>问你好答你好呀！ （审核通过后发送`你好`，喵呜会回复`你好呀！`）
 /删除词条 你好   （删除`你好`词条，后续再发送不会触发回复）
 </code></pre>
-<!-- ## <span style="color: #00AEAE">模拟抽卡（不启用）</span>
-模拟游戏抽卡，可以模拟 原神，碧蓝航线，公主连结，明日方舟，碧蓝档案 的抽卡  
-<span style="color: red">资源占用较多，大部分时候不启用</span>  
-
-使用方式：发送 `[游戏名]n抽` （n 为阿拉伯数字）
-
-示例：
-
-    原神10抽
-    碧蓝10抽
-    公主连结5抽
-    方舟10抽 -->
-
 <h1 id="-_1">----其他杂七杂八的功能----</h1>
 <h2 id="_19"><span style="color: #00AEAE">取头像</span></h2>
 <p>获取某个群友头像</p>
@@ -381,11 +371,17 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <p>用法：<code>/戳 @A</code> </p>
 <h2 id="_21"><span style="color: #00AEAE">喵一个</span></h2>
 <p>喵喵喵，<code>@喵呜 喵一个</code></p>
+<h2 id="_22"><span style="color: #00AEAE">一言</span></h2>
+<p>发送 <code>一言</code> 即可</p>
+<h2 id="_23"><span style="color: #00AEAE">每日英语</span></h2>
+<p>发送 <code>每日英语</code> 即可</p>
+<h2 id="_24"><span style="color: #00AEAE">毒鸡汤</span></h2>
+<p>发送 <code>毒鸡汤</code> 即可</p>
 <h2 id="genshinuid"><span style="color: #00AEAE">GenshinUID</span></h2>
 <p>喵呜还有一些原神相关的功能，如查询玩家信息，深渊信息，角色攻略，武器信息，角色语音等</p>
 <p>发送 <code>/原神帮助</code> 可以获得相关帮助</p>
 <h1 id="-_2">----被动----</h1>
-<h2 id="_22"><span style="color: #00AEAE">好感度</span></h2>
+<h2 id="_25"><span style="color: #00AEAE">好感度</span></h2>
 <p>主要用于自我保护，检测攻击性话语等用的，计算的好感其实不是很准。  </p>
 <p>喵呜会对你说的话进行情感分析，根据正负情况计算好感。<br />
 为正会加好感，为负时会检测负面关键词决定是否进行减好感。<br />
@@ -396,17 +392,17 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 好感度低也不用担心，只要没有对喵呜说过攻击性的话，一般是不会拉黑的，
 正常使用就好，如果不喜欢机器人可以屏蔽掉，还请不要随便骂。</p>
 <p>可以使用 <code>/查看好感</code> 来查看自己的好感等级</p>
-<h2 id="_23"><span style="color: #00AEAE">黑名单</span></h2>
+<h2 id="_26"><span style="color: #00AEAE">黑名单</span></h2>
 <p>黑名单会记录一些对机器人不友好的人，对于黑名单成员，喵呜不会回复他们的任何消息。</p>
-<h2 id="_24"><span style="color: #00AEAE">违禁词检测</span></h2>
+<h2 id="_27"><span style="color: #00AEAE">违禁词检测</span></h2>
 <p>喵呜会检测向喵呜发送的消息中的违禁词，若有违禁词则可能会禁言触发者，
 并且会拉黑10分钟以及转告主人，会视情况决定是否永久拉黑，但是误触发不会被永久拉黑</p>
-<h2 id="_25"><span style="color: #00AEAE">防刷屏</span></h2>
+<h2 id="_28"><span style="color: #00AEAE">防刷屏</span></h2>
 <p>发消息过快时（一定时间内发送超过一定条数消息），喵呜会不理刷屏者 30s ，主要用于防止机器人之间互相刷屏</p>
-<h2 id="_26"><span style="color: #00AEAE">被禁言后行为</span></h2>
+<h2 id="_29"><span style="color: #00AEAE">被禁言后行为</span></h2>
 <p>喵呜被禁言超过七天会通知主人，并可能会退群<br />
 被禁言超过半小时会通知主人，并临时拉黑被禁言的群一天（即不回复被禁言的群里的消息，即便已经解禁）</p>
-<h2 id="_27"><span style="color: #00AEAE">复读机</span></h2>
+<h2 id="_30"><span style="color: #00AEAE">复读机</span></h2>
 <p>随机复读群友之前发的一句话</p>
 <hr>
 
